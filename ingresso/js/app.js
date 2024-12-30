@@ -1,7 +1,12 @@
 function comprar() {//recuperar as informaçõpes do formulario
  let tipo = document.getElementById('tipo-ingresso');
- let qtd = parseInt(document.getElementById('qtd').value);//parseint para retornar como numero inteiro
-   
+ let qtdInput = document.getElementById('qtd');
+ let qtd = parseInt(qtdInput.value);//parseint para retornar como numero inteiro
+ 
+ if (isNaN(qtd) || qtd <= 0 ) {//verifica se o numero é maior que 0/positivo
+    alert('Por favor insira uma quantidade válida.')
+    return;
+ }  
  if (tipo.value == 'pista') {//condicional para comprar pista
       comprarPista(qtd);
   }else if (tipo.value == 'superior') {//condicional para comprar superior
