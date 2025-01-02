@@ -1,12 +1,14 @@
 body {
   font-family:'Playwrite Austrália Victoria Guia';
-  background: #000;
-  min-height: 100vh;
-  position: relative;
+    background-image: url('./assets/arvore.png');
+    background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    min-height: 100vh;
+    position: relative;
 }
 
 .background__detail {
-  background-color: #14211e;
+  background-color: transparent;
   height: calc(100% - 389px);
   left: 0;
   position: absolute;
@@ -45,9 +47,9 @@ body {
   border-color: #083872;     /* Cor da borda ao passar o mouse */
 }
 .content {
-  background-color: #322e2e;
-  border: 1px solid #870ba0;
-  filter: drop-shadow(0px 0px 50px #870ba0);
+  background-color: transparent;
+  border: 1px solid transparent;
+  filter: drop-shadow(0px 0px 20px #595559);
   height: 871px;
   left: 50%;
   margin: 0 auto;
@@ -59,7 +61,7 @@ body {
 }
 
 .content__corner-rectangle {
-  background-color: #00f4bf;
+  background-color:transparent;
   bottom: -15px;
   clip-path: polygon(0% 100%, 0% 50%, 4% 0%, 100% 0%, 100% 50%, 96% 100%);
   height: 33px;
@@ -81,7 +83,7 @@ body {
   align-items: center;
   border: 1px solid #870ba0;
   border-radius: 8px;
-  color: #fff;
+  color: #000;
   display: flex;
   font-size: 21px;
   font-weight: 400;
@@ -93,7 +95,8 @@ body {
 }
 
 .friends__container > p {
-  color: #fff;
+  color: #000;
+  filter: drop-shadow(0px 0px 20px #595559);
   font-size: 21px;
   font-weight: 400;
   line-height: 160%;
@@ -124,7 +127,8 @@ body {
   background-color: transparent;
   border: 1px solid #870ba0;
   border-radius: 8px;
-  color: #fff;
+  color: #000;
+  filter: drop-shadow(0px 0px 20px #595559);
   display: flex;
   font-size: 21px;
   font-weight: 400;
@@ -136,8 +140,9 @@ body {
 }
 
 .form__input::placeholder {
-  color: #fff;
+  color: #000;
   font-size: 21px;
+  filter: drop-shadow(0px 0px 20px #595559);
 }
 
 .form__label {
@@ -158,18 +163,11 @@ body {
   text-decoration-line: underline;
 }
 
-.page__image {
-  position: absolute;
-  right: 0;
-  top: 76px;
-  z-index: 2;
-  pointer-events: none;
-}
-
 .prizeDraw__container {
   color: #870ba0;
   font-size: 21px;
   font-style: italic;
+  filter: drop-shadow(0px 0px 20px #595559);
   font-weight: 700;
   height: 199px;
   line-height: 160%;
@@ -202,7 +200,7 @@ body {
 
 .section__title {
   color: #fff;
-  
+  font-family:'Playwrite Austrália Victoria Guia';
   font-size: 100px;
   font-style: normal;
   font-weight: 700;
