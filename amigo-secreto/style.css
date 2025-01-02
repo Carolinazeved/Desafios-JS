@@ -1,11 +1,12 @@
 body {
+  font-family:'Playwrite Austrália Victoria Guia';
   background: #000;
   min-height: 100vh;
   position: relative;
 }
 
 .background__detail {
-  background-color: #00f4bf;
+  background-color: #14211e;
   height: calc(100% - 389px);
   left: 0;
   position: absolute;
@@ -33,11 +34,20 @@ body {
   text-align: center;
   width: 208px;
 }
+.button.reiniciar {
+  background-color: #870ba0;
+  color: #fff;          
+  border: 2px solid #870ba0; /* Borda correspondente */
+}
 
+.button.reiniciar:hover {/*funcao de trocar a cor ao passar o mouse em cima do botao*/
+  background-color: #083872; /* Fundo um pouco mais escuro */
+  border-color: #083872;     /* Cor da borda ao passar o mouse */
+}
 .content {
-  background-color: #000;
-  border: 1px solid #1875e8;
-  filter: drop-shadow(0px 0px 30px #1875e8);
+  background-color: #322e2e;
+  border: 1px solid #870ba0;
+  filter: drop-shadow(0px 0px 50px #870ba0);
   height: 871px;
   left: 50%;
   margin: 0 auto;
@@ -69,7 +79,7 @@ body {
 
 .friends__container {
   align-items: center;
-  border: 1px solid #1875e8;
+  border: 1px solid #870ba0;
   border-radius: 8px;
   color: #fff;
   display: flex;
@@ -90,7 +100,7 @@ body {
 }
 
 .friends__title {
-  color: #1875e8;
+  color: #870ba0;
   font-size: 24px;
   font-weight: 700;
   line-height: 110%;
@@ -99,7 +109,7 @@ body {
 .form {
   display: flex;
   flex-direction: column;
-  font-family: Inter;
+ 
   font-style: normal;
 }
 
@@ -112,7 +122,7 @@ body {
 .form__input {
   align-items: center;
   background-color: transparent;
-  border: 1px solid #1875e8;
+  border: 1px solid #870ba0;
   border-radius: 8px;
   color: #fff;
   display: flex;
@@ -131,7 +141,7 @@ body {
 }
 
 .form__label {
-  color: #1875e8;
+  color: #870ba0;
   font-size: 24px;
   font-weight: 700;
   line-height: 110%;
@@ -139,7 +149,7 @@ body {
 }
 
 .form__link {
-  color: #00f4bf;
+  color: #870ba0;
   cursor: pointer;
   font-size: 24px;
   font-weight: 400;
@@ -157,7 +167,7 @@ body {
 }
 
 .prizeDraw__container {
-  color: #fff;
+  color: #870ba0;
   font-size: 21px;
   font-style: italic;
   font-weight: 700;
@@ -167,15 +177,19 @@ body {
 }
 
 .prizeDraw__title {
-  color: #00f4bf;
+  color: #870ba0;
   font-size: 24px;
   font-weight: 700;
   line-height: 110%;
 }
 
 .primary {
-  background-color: #1875e8;
+  background-color: #870ba0;
   color: #fff;
+}
+.button.primary:hover {
+  background-color: #083872; /* Fundo um pouco mais escuro */
+  border-color: #083872;     /* Cor da borda ao passar o mouse */
 }
 
 .section--results {
@@ -188,8 +202,8 @@ body {
 
 .section__title {
   color: #fff;
-  font-family: Chakra Petch;
-  font-size: 88px;
+  
+  font-size: 100px;
   font-style: normal;
   font-weight: 700;
   line-height: 80%;
@@ -197,10 +211,17 @@ body {
 }
 
 .section__title > span {
-  color: #1875e8;
+  color: #870ba0;
 }
 
 .secondary {
-  background-color: #fff;
-  color: #1875e8;
+  background-color: #870ba0;
+  color: #fff;
 }
+.button.secondary:hover {/*muda a cor do botao quando o mouse passa por cima dele*/
+  background-color: #083872; /* Fundo um pouco mais escuro */
+  border-color: #083872;     /* Cor da borda ao passar o mouse */
+}
+
+
+
